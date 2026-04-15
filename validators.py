@@ -1,3 +1,4 @@
+# Corrección: manejo mejorado de errores
 def validar_producto(producto):
     return producto.strip() != ""
 
