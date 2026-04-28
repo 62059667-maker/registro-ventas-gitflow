@@ -2,6 +2,10 @@ from database import conectar
 from datetime import datetime
 
 def registrar_venta(producto, cantidad, precio):
+
+    if cantidad <= 0 or precio <= 0:
+        return False
+
     try:
         total = cantidad * precio
         fecha = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
