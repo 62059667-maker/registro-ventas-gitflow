@@ -1,6 +1,9 @@
 from database import conectar
 from datetime import datetime
 
+def calcular_total_venta(cantidad, precio):
+    return cantidad * precio
+
 def registrar_venta(producto, cantidad, precio):
 
     if cantidad <= 0 or precio <= 0:
